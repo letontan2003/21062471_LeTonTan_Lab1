@@ -247,3 +247,11 @@ function arrayDifferenceFirstOnly(arr1, arr2) {
 let differenceFirstOnlyArray = arrayDifferenceFirstOnly([1, 2, 3], [2, 3, 4]);
 document.write(`Các phần tử chỉ có trong mảng đầu tiên: [${differenceFirstOnlyArray.join(', ')}]<br>`);
 
+// 27. Tạo một hàm nhận một mảng số và trả về một mảng mới với các phần tử duy nhất
+document.write("<h3>27. Tạo một hàm nhận một mảng số và trả về một mảng mới với các phần tử duy nhất:</h3>");
+function getDistinctElements(arr) {
+    return [...new Set(arr)];
+}
+let distinctArray = getDistinctElements([1, 2, 2, 3, 4, 4, 5]);
+document.write(`Các phần tử duy nhất: [${distinctArray.join(", ")}]<br>`);
+
